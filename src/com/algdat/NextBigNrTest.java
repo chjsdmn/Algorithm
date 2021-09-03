@@ -12,5 +12,6 @@ class NextBigNrTest {
         int res=NextBigNr.findNextBig(a);
         int truth=10;
         assertEquals(truth,res);
+        //assertThrows()
     }
 }
