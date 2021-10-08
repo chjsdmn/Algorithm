@@ -1,4 +1,6 @@
-package com.algdat;
+package com.algdat.uke34;
+
+import com.algdat.uke34.MyFirstSort;
 
 import static org.junit.jupiter.api.Assertions.*;
 

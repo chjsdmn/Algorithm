@@ -5,13 +5,13 @@ public class TournamentTree {
         char value;
         Node leftChild;   //以自定义类作为类型
         Node rightChild;  //以自定义类作为类型
-        Node(char alpha){    //constructor
-            this.value =alpha;
+        Node(char value){    //constructor
+            this.value =value;
             this.leftChild=null;
             this.rightChild=null;
         }
         void print(){
-            System.out.print(value +" ");  //hvorfor ikke this.alpha??
+            System.out.print(value +" ");  //hvorfor ikke this.value??
             if(this.leftChild!=null) this.leftChild.print();  //recursion?
             if(this.rightChild!=null) this.rightChild.print();
         }

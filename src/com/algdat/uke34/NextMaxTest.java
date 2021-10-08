@@ -1,5 +1,6 @@
-package com.algdat;
+package com.algdat.uke34;
 
+import com.algdat.uke34.NextMax;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,7 +10,7 @@ class NextMaxTest {
     @Test
     void findNextMax() {
         int a[]={6,2,9,4,6,9,7,1,4,8};
-        int res=NextMax.findNextMax(a);
+        int res= NextMax.findNextMax(a);
         int truth=8;
         assertEquals(truth,res);
     }

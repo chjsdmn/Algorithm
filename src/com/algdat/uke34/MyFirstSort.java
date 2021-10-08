@@ -1,4 +1,4 @@
-package com.algdat;
+package com.algdat.uke34;
 
 import java.util.Arrays;
 

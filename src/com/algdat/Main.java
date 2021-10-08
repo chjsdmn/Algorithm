@@ -10,7 +10,7 @@ public class Main {
 		System.out.println(erSortert(arr2));
     }
 
-    public static int inversjoner(int[] arr){
+    public static int inversjoner(int[] arr){  //在一个数组里，如果左边的数组大于右边的，(3,2), 这就是一个inversjon
     	int counter=0;
     	for(int i=0; i<arr.length-1; i++){
     		for(int j=i+1; j<arr.length; j++){

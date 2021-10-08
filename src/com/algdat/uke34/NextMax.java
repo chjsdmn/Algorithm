@@ -1,4 +1,4 @@
-package com.algdat;
+package com.algdat.uke34;
 
 public class NextMax {
     public static void main(String[] args){

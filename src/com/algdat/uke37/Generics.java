@@ -16,6 +16,11 @@ public class Generics {
         sortGenerics(c);
         sortGenerics(d);
     }
+
+    /**
+     * Comparable 是一个接口，类Person继承了这个接口，所以定义接口中的所有方法！（除非实现接口的类是抽象类）
+     * 一个类通过继承接口的方式，从而来继承接口的抽象方法。
+     */
     //建立Person class， 为了能让Person类型的数组也可以使用generics类型的方法
     public static class Person implements Comparable<Person>{  //Person class如果要使用sortGenerics方法，需要implements Comparable，并且建立一个compareTo方法
         String first_name;
