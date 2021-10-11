@@ -37,7 +37,7 @@ public class CircularBuffer {
     }
     public static void main(String[] args) {
         CircularBuffer circularBuffer = new CircularBuffer(6);
-        String a = "abcdefghijklmnopqrstuvwxyz";
+        String a = "abcdefghijklmnopqrstuvwxyzøåæ";
         char[] values = a.toCharArray();  //将字符串转换成字符数组
         //int length = circularBuffer.count();  不能在这里叫这个function，因为这时候的长度为0
         for(int i = 0; i < values.length;){  //不在这里写每次变化的条件，放在最下面写
