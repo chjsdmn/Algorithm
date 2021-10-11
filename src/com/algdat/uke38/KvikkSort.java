@@ -2,6 +2,9 @@ package com.algdat.uke38;
 
 import java.util.Arrays;
 
+/**
+ * NB! funker ikke!!!
+ */
 public class KvikkSort {
     public static void main(String[] args) {
         int[] a = {6, 4, 3, 2, 7, 9, 1, 8, 5};
@@ -14,7 +17,7 @@ public class KvikkSort {
         quicksort(c, 0, c.length - 1);
         System.out.println(Arrays.toString(c));
     }
-    public static void quicksort(int[] a, int left, int right){
+    /*public static void quicksort(int[] a, int left, int right){
         if(left >= right) return;
         int midt = (left + right) / 2;
         int pivot = a[midt];
@@ -50,8 +53,8 @@ public class KvikkSort {
         int tmp = a[x];
         a[x] = a[y];
         a[y] = tmp;
-    }
-    /*public static
+    }*/
+    public static
     void quicksort(int[] values, int left, int right) {
         System.out.println("Begynner quicksort  i intervallet [" +left + ", " + right + "]");
         // Hvis vi ikke har noe intervall igjen (l == r)
@@ -80,10 +83,6 @@ public class KvikkSort {
         //   (rett til høyre for siste verdi som er mindre enn skilleverdi i punkt 2)
         int sorted_index = index+1;
         int tmp = values[sorted_index];
-        if (left >= right - 1) {
-            //System.out.println("Slutter rekursjon!");
-            return;
-        }
 
         values[sorted_index] = values[right];
         values[right] = tmp;
@@ -110,7 +109,7 @@ public class KvikkSort {
      * @param right
      * @return
      */
-    /*public static
+    public static
     int partition(int[] values, int pivot, int left, int right) {
         int l = left;
         int r = right;
@@ -143,5 +142,5 @@ public class KvikkSort {
 
         System.out.println("Siste tall mindre enn pivot er på indeks " + (l-1));
         return l-1;
-    }*/
+    }
 }
