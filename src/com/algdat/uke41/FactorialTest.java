@@ -4,7 +4,7 @@ import java.util.Stack;
 
 public class FactorialTest {
     public static void main(String[] args) {
-        System.out.println(stackBasedFactorial(10));
+        System.out.println(stackBasedFactorial(5));
     }
     static int stackBasedFactorial(int n){
         Stack<Integer> factorialStack = new Stack<Integer>(); //创建一个Stack，可以用里面的方法
