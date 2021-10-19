@@ -67,7 +67,7 @@ public class BsTree {
             BsTreeNode current = queue.removeFirst();  //将刚刚放进去的元素删除
             // 2. Legg till nodens barn i køen
             if(current.left_child != null) {  //要先判断当前元素是否有barn，如果有才能添加
-                queue.addLast(current.left_child);
+                queue.addLast(current.left_child);    //注意！是current的barn！！！
             }
             if(current.right_child != null) {
                 queue.addLast(current.right_child);
