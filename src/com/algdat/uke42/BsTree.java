@@ -53,6 +53,8 @@ public class BsTree {
 
         System.out.print("Per order without recursion: ");
         printDybdeFørstPreOrderNonRecurtion(root);   // A B D E C F G
+        System.out.println();
+        //printDybdeFørstPostOrderNonRecurtion(root);
     }
 
     /** Bredde først, 即分层遍历打印
@@ -122,4 +124,6 @@ public class BsTree {
             System.out.print(current.value + " ");
         }
     }
+
+
 }

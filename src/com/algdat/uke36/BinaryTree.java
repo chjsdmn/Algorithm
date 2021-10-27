@@ -8,9 +8,9 @@ public class BinaryTree {
         int a[]={3,7,2,8,10,6,9,4,5,1};
         int x=10;
         bubbleSort2(a);
-        System.out.println(Arrays.toString(a));
-        System.out.println(binaryTree(a,x));
-        System.out.println(binaryTreeRecursion(a,x,0,9));
+        System.out.println(Arrays.toString(a));  //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        System.out.println(binaryTree(a,x));   //9, Må være en liste som er sortert stigende! 必须是一个升序排序的列表！
+        System.out.println(binaryTreeRecursion(a,x,0,9));  // -5
     }
 
     public static int binaryTree(int[] a, int x){
