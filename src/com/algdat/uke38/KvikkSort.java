@@ -3,7 +3,7 @@ package com.algdat.uke38;
 import java.util.Arrays;
 
 /**
- * NB! funker ikke!!!
+ * 老师上课讲的，但是有BUG！！！
  */
 public class KvikkSort {
     public static void main(String[] args) {
@@ -11,49 +11,13 @@ public class KvikkSort {
         int[] b = {8, 5, 3, 6, 5, 2, 9, 1};
         int[] c = {2,1};
         quicksort(a, 0, a.length - 1);
-        System.out.println(Arrays.toString(a));
+        System.out.println(Arrays.toString(a)); //[2, 1, 3, 4, 5, 6, 7, 8, 9]
         quicksort(b, 0, b.length - 1);
-        System.out.println(Arrays.toString(b));
+        System.out.println(Arrays.toString(b)); //[2, 1, 5, 3, 6, 8, 9, 5]
         quicksort(c, 0, c.length - 1);
-        System.out.println(Arrays.toString(c));
-    }
-    /*public static void quicksort(int[] a, int left, int right){
-        if(left >= right) return;
-        int midt = (left + right) / 2;
-        int pivot = a[midt];
-        swap(a, midt, right);
-
-        int skillepos_index = partition(a, left, right - 1, pivot);
-        if(left >= right - 1) return;
-        swap(a, skillepos_index, right);
-        quicksort(a, left, skillepos_index - 1);
-        quicksort(a, skillepos_index + 1, right);
+        System.out.println(Arrays.toString(c)); //[2, 1]
     }
 
-    public static int partition(int[]a, int left, int right, int p){
-        int l = left;
-        int r = right;
-        while (l < r){
-            while (a[l] < p && l <= r){
-                l++;
-            }
-            while (a[r] >= p && l <= r){
-                r--;
-            }
-            if(l < r){
-                swap(a, l, r);
-                l++;
-                r--;
-            }
-        }
-        return l;
-    }
-
-    static void swap(int[] a, int x, int y){
-        int tmp = a[x];
-        a[x] = a[y];
-        a[y] = tmp;
-    }*/
     public static
     void quicksort(int[] values, int left, int right) {
         System.out.println("Begynner quicksort  i intervallet [" +left + ", " + right + "]");
@@ -83,7 +47,6 @@ public class KvikkSort {
         //   (rett til høyre for siste verdi som er mindre enn skilleverdi i punkt 2)
         int sorted_index = index+1;
         int tmp = values[sorted_index];
-
         values[sorted_index] = values[right];
         values[right] = tmp;
         System.out.println("Flytter pivot tilbake til indeks " + sorted_index);
