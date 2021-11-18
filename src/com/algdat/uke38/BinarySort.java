@@ -22,16 +22,16 @@ public class BinarySort {
         return -left;
     }
     //普通方法
-    /*public static int binarySort(int[] a, int left, int right, int x){
+    public static int binarySort2(int[] a, int left, int right, int x){
         int midt = (left + right) / 2;
         while (left < right) {
             if (x < a[midt]) {
                 right = midt - 1;
-                midt = (left + right) / 2;
+                midt = (left + right) / 2;  //这步要放在里面，因为更新完right，要立马更新midt的值
             }
             else if (x > a[midt]){
                 left = midt + 1;
-                midt = (left + right) / 2;
+                midt = (left + right) / 2;  //这步要放在里面，因为更新完left，要立马更新midt的值
             }
             else return midt;
         }
@@ -39,6 +39,6 @@ public class BinarySort {
             return midt;
         }
         else return -1;
-    }*/
+    }
 
 }

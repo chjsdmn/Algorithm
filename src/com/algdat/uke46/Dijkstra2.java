@@ -3,7 +3,7 @@ package com.algdat.uke46;
 import java.util.Arrays;
 /**
  * 自己在网上找到的代码
- * 没有打印出path。。。
+ * 并打印出path
  */
 public class Dijkstra2 {
     public static int[] vertex = {1, 2, 3, 4, 5, 6};

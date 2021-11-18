@@ -47,26 +47,24 @@ public class HashMap {
         return hash;
     }
 
-    //另一种方法计算hash
-    static int hash(String data) {
-        int hash = 0;
-
-        for (int i=data.length()-1; i>= 0; --i) {
-            char c = data.charAt(i);
-            hash = (hash + c)*31;
-        }
-
-        if (hash < 0) {
-            hash = -hash;
-        }
-
-        return hash;
-    }
-
     //将hash值除以arraylist的长度，取余数
     public static int beregnHashRest(int hash, int hashMapSize){
         int hashRest = hash % hashMapSize;
 
         return hashRest;
     }
+
+    //另一种方法计算hash
+    static int hash(String data) {
+        int hash = 0;
+        for (int i=data.length()-1; i>= 0; --i) {
+            char c = data.charAt(i);
+            hash = (hash + c)*31;
+        }
+        if (hash < 0) {
+            hash = -hash;
+        }
+        return hash;
+    }
+
 }
