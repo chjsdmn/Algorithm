@@ -18,7 +18,7 @@ public class PrioritetsKø {
         while (!prioritetsKø.isEmpty()){
             System.out.print(prioritetsKø.poll() + " ");
         }
-        System.out.println();
+        System.out.println();  //-15 -5 5 25 50
 
         Queue<Integer> prioritetsKø2 = new PriorityQueue<>(Collections.reverseOrder());
         prioritetsKø2.add(5);
@@ -29,7 +29,7 @@ public class PrioritetsKø {
         while (!prioritetsKø2.isEmpty()){
             System.out.print(prioritetsKø2.poll() + " ");
         }
-        System.out.println();
+        System.out.println();  //50 25 5 -5 -15
 
         Queue<String> prioritetsKø3 = new PriorityQueue<>();
         prioritetsKø3.add("hello");
@@ -40,7 +40,7 @@ public class PrioritetsKø {
         while (!prioritetsKø3.isEmpty()){
             System.out.print(prioritetsKø3.poll() + " ");
         }
-        System.out.println();
+        System.out.println();   //bye gooday hadet hello nice
 
         Queue<String> prioritetsKø4 = new PriorityQueue<>(Collections.reverseOrder());
         prioritetsKø4.add("hello");
@@ -49,7 +49,7 @@ public class PrioritetsKø {
         prioritetsKø4.add("hadet");
         prioritetsKø4.add("nice");
         while (!prioritetsKø4.isEmpty()){
-            System.out.print(prioritetsKø4.poll() + " ");
+            System.out.print(prioritetsKø4.poll() + " ");  //nice hello hadet gooday bye
         }
     }
 }

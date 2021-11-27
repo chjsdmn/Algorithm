@@ -1,6 +1,6 @@
 package com.algdat.uke38;
 
-public class BinarySort {
+public class BinarySøk {
     public static void main(String[] args){
         int[] a={1, 2, 4, 8, 17, 19, 22};
         System.out.println(binarySort(a, 0, a.length - 1, 22));
